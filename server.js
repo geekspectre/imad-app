@@ -41,7 +41,6 @@ function createtemplate(data){
     </html>`;
     return htmltemplate;
 }
-
 var app = express();
 app.use(morgan('combined'));
 
