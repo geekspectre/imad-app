@@ -17,7 +17,7 @@ body {
 }
 
 #footer{
-    padding-bottom: 0;
+    bottom: 0;
 }
 .img-medium {
     height: 200px;
