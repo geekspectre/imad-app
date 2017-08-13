@@ -1,11 +1,9 @@
-console.log('Loaded!');
-// Move the img
-var img= document.getElementById('madi');
-var marginLeft=0;
-function moveRight(){
-    marginLeft=marginLeft+1;
-    img.style.marginLeft=marginLeft+'px';
+//Counter
+var button = document.getElementById('counter');
+button.onclick = function(){
+    //Make a req to counter endpoint
+    //Capture response
+    //Render variable in correct span
+    counter =counter+1;
+    var span=document.getElementById('count');
 }
-img.onclick =function(){
-    var interval=setInterval(moveRight, 50);
-};
