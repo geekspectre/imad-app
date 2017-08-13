@@ -2,6 +2,39 @@ var express = require('express');
 var morgan = require('morgan');
 var path = require('path');
 
+var articleone = {
+  title: 'Article One | Geekspectre',
+  heading: 'Article One',
+  date: 'Aug 13 2017',
+  content: `
+            <p>
+            This is the content of the article one.
+            </p>
+            <p>
+            This is the content of the article one.
+            </p>`
+};
+
+var htmltemplate =`
+<html>
+    <head>
+        <title>Article One</title>
+    </head>
+    <body>
+        <div>
+            <a href="/">Home</a>
+        </div>
+        <hr>
+        <h3>
+            ${heading}
+        </h3>
+        <div>
+            ${date}
+        </div>
+        ${content}
+    </body>
+</html>`
+
 var app = express();
 app.use(morgan('combined'));
 
