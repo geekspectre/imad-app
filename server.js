@@ -33,7 +33,7 @@ var htmltemplate =`
         </div>
         ${content}
     </body>
-</html>`
+</html>`;
 
 var app = express();
 app.use(morgan('combined'));
