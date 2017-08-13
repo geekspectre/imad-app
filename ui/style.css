@@ -16,6 +16,9 @@ body {
     font-weight: bold;
 }
 
+#footer{
+    padding-bottom: 0;
+}
 .img-medium {
     height: 200px;
 }
