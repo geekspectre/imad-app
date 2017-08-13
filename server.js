@@ -15,25 +15,30 @@ var articleone = {
             </p>`
 };
 
-var htmltemplate =`
-<html>
-    <head>
-        <title>Article One</title>
-    </head>
-    <body>
-        <div>
-            <a href="/">Home</a>
-        </div>
-        <hr>
-        <h3>
-            ${heading}
-        </h3>
-        <div>
-            ${date}
-        </div>
-        ${content}
-    </body>
-</html>`;
+function createtemplate(data){
+    var heading = data.heading;
+    var date = data.date;
+    var content = data.content;
+    var htmltemplate =`
+    <html>
+        <head>
+            <title>Article One</title>
+        </head>
+        <body>
+            <div>
+                <a href="/">Home</a>
+            </div>
+            <hr>
+            <h3>
+                ${heading}
+            </h3>
+            <div>
+                ${date}
+            </div>
+            ${content}
+        </body>
+    </html>`;
+}
 
 var app = express();
 app.use(morgan('combined'));
